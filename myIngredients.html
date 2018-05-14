@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- Compiled and minified JavaScript -->
 
-  <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="assets/css/ingredients.css" />
 
 </head>
 
@@ -19,19 +19,19 @@
   <header>
     <ul id="dropdown1" class="dropdown-content">
       <li>
-        <a href="#!">myPage</a>
+        <a href="#!">My Page</a>
       </li>
       <li class="divider"></li>
       <li>
-        <a href="#!">myIngredients</a>
+        <a href="#!">My Ingredients</a>
       </li>
       <li class="divider"></li>
       <li>
-        <a href="#!">myGroceryList</a>
+        <a href="#!">My Grocery List</a>
       </li>
       <li class="divider"></li>
       <li>
-        <a href="#!">myRecipes</a>
+        <a href="#!">My Recipes</a>
       </li>
     </ul>
     <nav>
@@ -40,14 +40,16 @@
 
         <ul class="right hide-on-med-and-down">
           <li>
-            <a href="sass.html">Search</a>
+            <a href="sass.html"><i class="material-icons left">search</i>Search</a>
           </li>
           <li>
-            <a href="badges.html">Stores</a>
+            <a href="badges.html"><i class="material-icons left">location_searching</i>Stores</a>
           </li>
           <!-- Dropdown Trigger -->
           <li>
-            <a class="dropdown-trigger" href="#!" data-target="dropdown1">My Profile
+            <a class="dropdown-trigger" href="#!" data-target="dropdown1">
+                <i class="material-icons left">person</i>
+              My Profile
               <i class="material-icons right">arrow_drop_down</i>
             </a>
           </li>
@@ -56,29 +58,202 @@
     </nav>
 
   </header>
-</body> 
 <div class="container 1">
-    <label class="searchIn"><strong>Search By Ingredients</strong></label><hr>
-    <div class="row">
-     <form class="col s12">
-       <div class="row">
-         <div class="input-field col s6">
-           <input placeholder="Placeholder" id="foodSearch" type="text">
-           <label for="foodSearch">Ingredients</label>
-         </div>
-       </div>
-       <div class="row">
-         <div class="input-field col s12">
-           <input disabled value="I am not editable" id="disabled" type="text" class="validate">
-           <label for="disabled">Diet Type</label>
-         </div>
-       </div>
-       <div class="row">
-         <div class="input-field col s12">
-           <input id="password" type="text" class="validate">
-           <label for="password">Health</label>
-         </div>
-       </div>
+    <ul class="collapsible">
+        <li>
+          <div class="collapsible-header"><i class="material-icons">add</i>Add Item</div>
+          <div class="collapsible-body"><span>
+            
+            
+              <div class="row">
+                  <form class="col s12">
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <input placeholder="Item" id="addItem" type="text">
+                        <label for="addItem" style="font-size: 20px" ><b>Food Item</b></label>
+                      </div>
+                    </div>
+
+
+                    <ul class="collapsible">
+                        <li>
+                          <div class="collapsible-header" id="category"><i class="material-icons">dns</i>Category</div>
+                          <div class="collapsible-body"><span>
+
+
+                              <form action="#">
+                                  
+                                <div class="col s3">
+                                  <p>
+                                    <label>
+                                      <input class="with-gap" name="group1" type="radio"  />
+                                      <span>Dairy</span>
+                                    </label>
+                                  </p>
+                                  <p>
+                                    <label>
+                                      <input class="with-gap" name="group1" type="radio"  />
+                                      <span>Vegetables</span>
+                                    </label>
+                                  </p>
+                                  <p>
+                                    <label>
+                                      <input class="with-gap" name="group1" type="radio"  />
+                                      <span>Fruits</span>
+                                    </label>
+                                  </p>
+                                    <p>
+                                      <label>
+                                        <input class="with-gap" name="group1" type="radio"  />
+                                        <span>Baking and Grains </span>
+                                      </label>
+                                    </p>
+                                    <p>
+                                      <label>
+                                        <input class="with-gap" name="group1" type="radio"  />
+                                        <span>Added Sweeteners</span>
+                                      </label>
+                                    </p>
+                                </div>
+                                  <div class="col s3">
+                                    <p>
+                                      <label>
+                                        <input class="with-gap" name="group1" type="radio"  />
+                                        <span>Spices</span>
+                                      </label>
+                                    </p>
+                                    <p>
+                                      <label>
+                                        <input class="with-gap" name="group1" type="radio"  />
+                                        <span>Meats</span>
+                                      </label>
+                                    </p>
+                                    <p>
+                                      <label>
+                                        <input class="with-gap" name="group1" type="radio"  />
+                                        <span>Fish</span>
+                                      </label>
+                                    </p>
+                                    <p>
+                                      <label>
+                                        <input class="with-gap" name="group1" type="radio"  />
+                                        <span>Seafood</span>
+                                      </label>
+                                    </p>
+                                    <p>
+                                      <label>
+                                        <input class="with-gap" name="group1" type="radio"  />
+                                        <span>Condiments</span>
+                                      </label>
+                                    </p>
+                                  </div>
+                                  <div class="col s3">
+                                    <p>
+                                      <label>
+                                        <input class="with-gap" name="group1" type="radio"  />
+                                        <span>Oils</span>
+                                      </label>
+                                    </p>
+                                    <p>
+                                      <label>
+                                        <input class="with-gap" name="group1" type="radio"  />
+                                        <span>Sauces</span>
+                                      </label>
+                                    </p>
+                                    <p>
+                                      <label>
+                                        <input class="with-gap" name="group1" type="radio"  />
+                                        <span>Legumes</span>
+                                      </label>
+                                    </p>
+                                    <p>
+                                      <label>
+                                        <input class="with-gap" name="group1" type="radio"  />
+                                        <span>Alcohol</span>
+                                      </label>
+                                    </p>
+                                    <p>
+                                      <label>
+                                        <input class="with-gap" name="group1" type="radio"  />
+                                        <span>Seasonings</span>
+                                      </label>
+                                    </p>
+                                  </div>
+                                  
+                                   
+                                      <p>
+                                          <label>
+                                            <input class="with-gap" name="group1" type="radio"  />
+                                            <span>Soup</span>
+                                          </label>
+                                        </p>
+                                        <p>
+                                          <label>
+                                            <input class="with-gap" name="group1" type="radio"  />
+                                            <span>Nuts</span>
+                                          </label>
+                                        </p>
+                                        <p>
+                                          <label>
+                                            <input class="with-gap" name="group1" type="radio"  />
+                                            <span>Dairy Alternatives</span>
+                                          </label>
+                                        </p>
+                                        <p>
+                                          <label>
+                                            <input class="with-gap" name="group1" type="radio"  />
+                                            <span>Desserts and Snacks</span>
+                                          </label>
+                                        </p>
+                                        <p>
+                                          <label>
+                                            <input class="with-gap" name="group1" type="radio"  />
+                                            <span>Beverages</span>
+                                          </label>
+                                        </p>                          
+                                           
+                                </form>
+                            </span>
+                          </div>
+                        </ul>
+                         
+
+
+
+
+                    
+                    <!-- <div class="row">
+                      <div class="input-field col s12">
+                        <input type="text" id="health" class="validate">
+                        <label for="health">Health</label>
+                      </div>
+                    </div> -->
+                    <button class="btn waves-effect waves-light" type="submit" name="action">Add Item
+                      <i class="material-icons right">add</i>
+                    </button>
+                  
+                    
+                  </form>
+                </div>
+               </div>
+
+          </span></div>
+        </li>
+      </ul>
+      
+      
+</div>  
+<div class="container">
+    <!-- <div id="addedItems"> -->
+      <div class="col s5">
+          <div class="collapsible expandable">
+              <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+         
+      </div>
+</div>  
+
+
 
 
 <br>
@@ -97,7 +272,10 @@
       <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
     </div>
   </div>
+</div>
 </footer>
+
+
 <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>        
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>

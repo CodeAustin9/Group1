@@ -18,39 +18,46 @@
 <body>
     <header>
         <ul id="dropdown1" class="dropdown-content">
-            <li>
-                <a href="#!">myIngredients</a>
-            </li>
-            <li>
-                <a href="#!">myList</a>
-            </li>
-            <li class="divider"></li>
-            <li>
-                <a href="#!">myRecipes</a>
-            </li>
+          <li>
+            <a href="#!">My Page</a>
+          </li>
+          <li class="divider"></li>
+          <li>
+            <a href="#!">My Ingredients</a>
+          </li>
+          <li class="divider"></li>
+          <li>
+            <a href="#!">My Grocery List</a>
+          </li>
+          <li class="divider"></li>
+          <li>
+            <a href="#!">My Recipes</a>
+          </li>
         </ul>
         <nav>
-            <div class="nav-wrapper">
-                <a href="#!" class="brand-logo">What's Cooking?</a>
-
-                <ul class="right hide-on-med-and-down">
-                    <li>
-                        <a href="sass.html"></a>
-                    </li>
-                    <li>
-                        <a href="badges.html">Stores</a>
-                    </li>
-                    <!-- Dropdown Trigger -->
-                    <li>
-                        <a class="dropdown-trigger" href="#!" data-target="dropdown1">My Profile
-                            <i class="material-icons right">arrow_drop_down</i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+          <div class="nav-wrapper">
+            <a href="#!" class="brand-logo">What's Cooking?</a>
+    
+            <ul class="right hide-on-med-and-down">
+              <li>
+                <a href="sass.html"><i class="material-icons left">search</i>Search</a>
+              </li>
+              <li>
+                <a href="badges.html"><i class="material-icons left">location_searching</i>Stores</a>
+              </li>
+              <!-- Dropdown Trigger -->
+              <li>
+                <a class="dropdown-trigger" href="#!" data-target="dropdown1">
+                    <i class="material-icons left">person</i>
+                  My Profile
+                  <i class="material-icons right">arrow_drop_down</i>
+                </a>
+              </li>
+            </ul>
+          </div>
         </nav>
-
-    </header>
+    
+      </header>
 
         <!-- <div class="carousel carousel-slider">
             <a class="carousel-item" href="#one!">
@@ -89,12 +96,13 @@
                   <label for="health">Health</label>
                 </div>
               </div>
-              <div class="row">
-                <div class="input-field col s12">
+              <!-- <div class="row"> -->
+              <div id="test-slider"></div>
+                <!-- <div class="input-field col s12">
                   <input type="text" id="calories" class="validate">
                   <label for="calories">Calories</label>
-                </div>
-              </div>
+                </div> -->
+              <!-- </div> -->
               <div class="row">
                 <div class="input-field col s12">
                   <input type="text" id="cookTime" class="validate">
@@ -156,7 +164,7 @@
 
         <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>  
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
-        <script src="assets/javascript/app.js"></script>
+        <script src="assets/javascript/search.js"></script>
     </body>
 
 </html>
