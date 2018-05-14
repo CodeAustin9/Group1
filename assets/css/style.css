@@ -18,9 +18,11 @@ main {
      
   #map {
  
-    height: 100%;
-    width: 70%;
-    left: 512px;
+    min-height: 450px;
+    left: 600 px;
+    width: 95%;
+    border-radius: 10px;
+    
   
   }
   /* Optional: Makes the sample page fill the window. */
@@ -37,4 +39,7 @@ main {
   background-color: yellow;
   
   
+}
+.grocery{
+  margin-right: 20px;
 }

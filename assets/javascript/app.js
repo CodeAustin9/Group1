@@ -138,6 +138,12 @@ var exFood = "";
 
 });
 
+$.ajax({
+    url: queryMap,
+    method: "GET"
+}).then(function(mapResponse){
+    
+})
 
 
 

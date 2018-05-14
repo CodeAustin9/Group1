@@ -50,22 +50,45 @@
                 </div>
             </nav>
         </header>
-        <div>
-            <div class="side-nav-wrapper stores">
+        <div class="container">
+            <div class="row">
+                <div class="col m6">
+                    <h1>Left Section</h1> 
+                
+                <p>
+                    <span class="grocery">
+                        King Soopers
+                    </span>
+                    <span class="grocery">
+                        Whole Foods
+                    </span>
+
+                </p>
+                </div>
+            
+                <div class="col m6" id="map">
+
+                    <p>Right Section</p>
+
+                    <script>
+                            function initMap() {
+                            
+                                // pick center coordinates for your map
+                                var myMapCenter = {lat: 40.785091, lng: -73.968285};
+                            
+                                // create map and say which HTML element it should appear in
+                                var map = new google.maps.Map(document.getElementById('map'), {
+                                    center: myMapCenter,
+                                    zoom: 14
+                                });
+                            }
+                            </script>
+
+                    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+                </div>
             </div>
         </div>
-        <div id="map"></div>
-        <script>
-            var map;
-            function initMap() {
-              map = new google.maps.Map(document.getElementById('map'), {
-                center: { lat: -34.397, lng: 150.644 },
-                zoom: 8
-              });
-            }
-            
-        </script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+
         <footer class="page-footer">
             <div class="container">
                 <div class="row">
