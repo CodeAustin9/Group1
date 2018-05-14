@@ -10,7 +10,7 @@
     font-size: 10em;
 }
 footer {
-    position: fixed;
+    position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
